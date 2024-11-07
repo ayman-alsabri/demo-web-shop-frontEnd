@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+    color: #fff;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    filter: drop-shadow(0px 1px 1px rgb(255, 156, 102));
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.main-nav li a:hover {
+    color: #f60;
+}
+
+
+
+.menu-toggle {
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.side-menu {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #222;
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 20;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding-top: 62px;
+}
+
+.side-menu ul li {
+    margin-bottom: 20px;
+}
+
+.side-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.side-menu ul li a:hover {
+    background-color: #f60;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.page-title {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background: linear-gradient(#111, rgba(146, 51, 0, 0.416)),
+        url('../images/vehicle-bg.png') no-repeat center center/cover;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.product {
+    min-width: 100%;
+    padding:0px 20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prev,
+.next {
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    color: #fff;
+}
+
+.motorcycle-details h2 {
+    font-size: 3rem;
+    color: #f60;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.motorcycle-details p {
+    font-size: 1.5rem;
+    margin: 5px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.right-side {
+    position: relative;
+    text-align: center;
+}
+
+.vehicle-image {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.7));
+    transition: transform 0.3s ease-in-out;
+}
+
+.vehicle-image:hover {
+    transform: scale(1.05);
+}
+
+.go-button {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    background-color: #f60;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 0 10px #f60, 0 0 20px #f60;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.go-button:hover {
+    box-shadow: 0 0 20px #ff4500, 0 0 30px #ff4500;
+    transform: scale(1.05);
+}
+
+.container:has(.social-links) {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .vehicle-image {
+        max-width: 90%;
+        max-height: 350px;
+    }
+
+    .prev,
+    .next {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .go-button {
+        position: static;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container:has(.carousel-wrapper) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+

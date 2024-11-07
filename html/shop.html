@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Super Vehicle Shop - Shop</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/shop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Shop Logo">
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="index.html#productsContainer">Products</a></li>
+                    <li><a href="offers.html">offers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="shop-section">
+        <div class="container">
+            <h1 class="page-title">Pick Your Dream Vehicle</h1>
+            <div class="items-grid">
+                <div class="item-card">
+                    <img src="../images/ferrari-488.png" alt="Ferrari 488">
+                    <h2>Ferrari 488</h2>
+                    <p>$300,000</p>
+                    <button class="buy-btn" onclick="addToCart('Ferrari 488',300000)">Buy Now</button>
+                </div>
+                <div class="item-card">
+                    <img src="../images/lamborghini-aventador.png" alt="Lamborghini Aventador">
+                    <h2>Lamborghini Aventador</h2>
+                    <p>$250,000</p>
+                    <button class="buy-btn" onclick="addToCart('Lamborghini Aventador',250000)">Buy Now</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="../images/ktm-rc.png" alt="KTM 1">
+                    <h2>KTM 1</h2>
+                    <p>$28,000</p>
+                    <button class="buy-btn" onclick="addToCart('KTM 1',28000)">Buy Now</button>
+                </div>
+                <div class="item-card">
+                    <img src="../images/Duke-390.png" alt="Duke 390">
+                    <h2>Duke 390</h2>
+                    <p>$26,000</p>
+                    <button class="buy-btn" onclick="addToCart('Duke 390',26000)">Buy Now</button>
+                </div>
+                <div class="item-card">
+                    <img src="../images/yamaha-r3.png" alt="Yamaha r3">
+                    <h2>Yamaha r3</h2>
+                    <p>$20,000</p>
+                    <button class="buy-btn" onclick="addToCart('Yamaha r3',20000)">Buy Now</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="../images/gulfstream-g700.png" alt="Gulfstream G700">
+                    <h2>Gulfstream G700</h2>
+                    <p>$65,000,000</p>
+                    <button class="buy-btn" onclick="addToCart('Gulfstream G700',+6000000)">Buy Now</button>
+                </div>
+                <div class="item-card">
+                    <img src="../images/bombardier-global-7500.png" alt="Bombardier Global 7500">
+                    <h2>Bombardier Global 7500</h2>
+                    <p>$55,000,000</p>
+                    <button class="buy-btn" onclick="addToCart('Bombardier Global 7500',55000000)">Buy Now</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="../images/azimut-grande.png" alt="Azimut Grande">
+                    <h2>Azimut Grande</h2>
+                    <p>$150,000,000</p>
+                    <button class="buy-btn" onclick="addToCart('Azimut Grande',150000000)">Buy Now</button>
+                </div>
+                <div class="item-card">
+                    <img src="../images/sunseeker-131.png" alt="Sunseeker 131">
+                    <h2>Sunseeker 131</h2>
+                    <p>$180,000,000</p>
+                    <button class="buy-btn" onclick="addToCart('Sunseeker 131',180000000)">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Super Vehicle Shop &copy; 2024. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><img src="../images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="../images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="../images/instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/shop.js"></script>
+</body>
+
+</html>

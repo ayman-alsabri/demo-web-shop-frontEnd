@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Super Cars - Super Vehicle Shop</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Shop Logo">
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="index.html#productsContainer" class="active">Products</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        </div>
+    </header>
+
+    <aside class="side-menu" id="sideMenu">
+        <ul>
+            <li><a href="motorcycles.html">Motorcycles</a></li>
+            <li><a href="supercars.html">Super Cars</a></li>
+            <li><a href="privateplanes.html">Private Planes</a></li>
+            <li><a href="yachts.html">Yachts</a></li>
+        </ul>
+        <span class="close-btn" onclick="toggleMenu()">&#10006;</span>
+    </aside>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="page-title">Explore the Best Super Cars</h1>
+            <div class="carousel-wrapper">
+                <div class="carousel" id="carousel">
+                    <div class="product">
+                        <div class="left-side">
+                            <div class="motorcycle-details">
+                                <h2>Lamborghini Aventador</h2>
+                                <p>Super Car</p>
+                                <p>Yellow</p>
+                                <p>2022</p>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <img src="../images/lamborghini-aventador.png" alt="Lamborghini Aventador" class="vehicle-image">
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="left-side">
+                            <div class="motorcycle-details">
+                                <h2>Ferrari 488 GTB</h2>
+                                <p>Super Car</p>
+                                <p>Red</p>
+                                <p>2021</p>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <img src="../images/ferrari-488.png" alt="Ferrari 488 GTB" class="vehicle-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="prev" onclick="moveSlide(event, -1)">&#10094;</a>
+            <a href="#" class="next" onclick="moveSlide(event, 1)">&#10095;</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Super Vehicle Shop &copy; 2024. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><img src="../images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="../images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="../images/instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+</body>
+
+</html>
